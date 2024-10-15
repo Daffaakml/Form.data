@@ -1,63 +1,82 @@
-*, 
-html {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #5c5a71;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-navbar {
-    background-color:#00BFFF;
+/* FORM STYLE */
+.form {
+    background-color: #fff;
+    margin: 10px 0 12px;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 1px #05160498;
+    max-width: 400px;
     width: 100%;
-    height: 10vh;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
-
-.ul-navbar {
+.form h2 {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+form div {
     display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items:center;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
-
-.li-navbar {
-    list-style-type: none;
+label {
+    padding:0 0 0 5px;
+    margin-bottom: 3px;
+}
+form div input,
+form div select,
+form div textarea {
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 8px;
+    border: solid 1px #05160498;
+}
+form div textarea{
+    resize: none;
+    height: 80px;
+}
+.prodi{
+    margin: 10px;
+}
+form .prodi .informatika,
+form .prodi .sisfor {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 5px;
+}
+.form .submit {
+    margin: 30px 0 0 0 ;
+    border: solid 1px #05160498;
     padding: 10px;
-    margin: 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #a2c8a098;
+    transition: all .5s ease;
+    align-items: center;
+}
+.form .submit a {
     color: black;
-    font-size: 30px;
 }
-
-.container-content {
-    background-color: #FFFDD0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.img-content {
-    width: 30%;
-    height: 30%;
-}
-
-.container-footer {
-    height: 5%vh;
-    background-color: #00BFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.h1-footer {
-    font-size: 40px;
-}
-
-.container-footer2 {
-    height: 5%vh;
-    background-color: #00BFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.h2-footer {
-    font-size: 20px;
+.form .submit:hover{
+    background-color: #495a4898;
+    cursor: pointer;
 }
