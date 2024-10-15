@@ -66,6 +66,7 @@ form .prodi .sisfor {
     margin: 30px 0 0 0 ;
     border: solid 1px #05160498;
     padding: 10px;
+    width: 100%;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -73,9 +74,9 @@ form .prodi .sisfor {
     transition: all .5s ease;
     align-items: center;
 }
-.form .submit a {
+/* .form .submit a {
     color: black;
-}
+} */
 .form .submit:hover{
     background-color: #495a4898;
     cursor: pointer;
